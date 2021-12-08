@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background: rgb(192, 192, 192);
+}
+
+section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    min-height: 100vh;
+}
+
+.carres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.carre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+    width: 100px;
+    background: red;
+    transition: 1s;
+    font-size: 40px;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.carre ion-icon {
+    transform: translateY(10px);
+    transition: 1s;
+}
+
+.carre span {
+    font-size: 10px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.active {
+    transform: scale(1.1);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.671) 0px 25px 20px -20px;
+}
+
+.carre.active ion-icon {
+    transform: translateY(-5px) rotate(360deg);
+}
+
+.carre.active span {
+    opacity: 1;
+    transition-delay: .8s;
+}
+
+.carre.active.fb {
+    box-shadow: #0d307a 0px 25px 20px -20px;
+}
+
+.carre.active.tw {
+    box-shadow: #0484b6 0px 25px 20px -20px;
+}
+
+.carre.active.insta {
+    box-shadow: #d81455 0px 25px 20px -20px;
+}
+
+.fb { 
+    background: #3b5998; 
+}
+
+.tw { 
+    background: #00acee; 
+}
+
+.insta { 
+    background: #E1306C; 
+}
